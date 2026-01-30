@@ -1,24 +1,26 @@
-class profile:
-    def __init__(self, name, role, skills, interests):
+class Profile:
+    def __init__(self, name, role, bio, skills):
         self.name = name
         self.role = role
+        self.bio = bio
         self.skills = skills
-        self.interests = interests
 
-    def summary(self):
-        return f"{self.name} | {self.role}"
-
-    def show_skills(self):
-        return ",".join(self.skills)
-
-    def show_interests(self):
-        return ",".join(self.interests)
+    def display(self):
+        print(f"\n{self.name}")
+        print(f"{self.role}")
+        print("-" * 30)
+        print(self.bio)
+        print("\nSkills:")
+        for skill in self.skills:
+            print(f"- {skill}")
 
 
 if __name__ == "__main__":
-    me = profile(name="Varshini V", role="Aspiring Software Engineering", skills=[
-                 "Python", "Git", "GitHub"], interests=["Tech", "Design", "Learning", "Growth"])
+    me = Profile(
+        name="Varshini V",
+        role="Aspiring Software Engineer",
+        bio="I’m building myself step by step through code, consistency, and curiosity.",
+        skills=["Python", "Git", "Problem Solving"]
+    )
 
-    print(me.summary())
-    print("Skills:", me.show_skills())
-    print("Interests:", me.show_interests())
+    me.display()
