@@ -1,0 +1,26 @@
+[
+    {
+        "date": "2026-01-31",
+        "mood": "calm but tired",
+        "hours_spent": 2,
+        "note": "Even though Git drained me, I didn\u2019t quit."
+    },
+    {
+        "date": "2026-01-31",
+        "mood": "calm but tired",
+        "hours_spent": 2,
+        "note": "Even though Git drained me, I didn\u2019t quit."
+    },
+    {
+        "date": "2026-01-31",
+        "mood": "A bit tired",
+        "hours_spent": "1 hour",
+        "note": "I didn't quit"
+    },
+    {
+        "date": "2026-01-31",
+        "mood": "good",
+        "hours_spent": "30 mins",
+        "note": "Motivation to work harder!"
+    }
+]
