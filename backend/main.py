@@ -22,6 +22,9 @@ def main():
 
     # Daily Log
     log = DailyLog()
+    choice = input("\nDo you want to add today's log entry? (y/n) → ")
+    if choice.lower() == 'y':
+        log.add_entry()
     log.show_logs()
 
     # Coding Streak
